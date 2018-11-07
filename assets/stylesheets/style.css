@@ -94,8 +94,7 @@ label{
   display: block;
   background-color: #0792aa;
   padding: 10px 20px;
-  border: 2px solid red;
-  border-style:dotted;	
+  border: 2px solid red;	
   font-family: "Arial";
   font-size: 15px;
   cursor: pointer;
