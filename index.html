@@ -14,9 +14,9 @@
        <nav>
     <ul>
       <li><a href="#top" onmouseover="playclip();" >Top</a></li>
-      <li><a href="#national" onmouseover="playclip();">National</a></li>
-      <li><a href="#regional" onmouseover="playclip();">Regional</a></li>
-      <li><a href="#state" onmouseover="playclip();">State-Level</a></li>
+      <li><a href="#national" onclick="showHide('nationwide');" onmouseover="playclip();">National</a></li>
+      <li><a href="#regional" onclick="showHide('regionlevel');" onmouseover="playclip();">Regional</a></li>
+      <li><a href="#state" onclick="showHide('statelevel');" onmouseover="playclip();">State-Level</a></li>
     <ul>
         </nav>
     </header>
@@ -83,6 +83,20 @@
 /* scrollTop() >= 240
    Should be equal the the height of the header
  */
+	
+	function showHide(shID) {
+if (document.getElementById(shID)) {
+  if (document.getElementById(shID+'-show').style.display != 'none') {
+     document.getElementById(shID+'-show').style.display = 'none';
+     document.getElementById(shID).style.display = 'block';
+  }
+  else {
+     document.getElementById(shID+'-show').style.display = 'inline';
+     document.getElementById(shID).style.display = 'none';
+  }
+ }
+}
+	
 </script>
 <audio>
 <source src="assets/sound/click.mp3"></source>
