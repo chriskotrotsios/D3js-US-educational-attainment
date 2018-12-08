@@ -31,6 +31,7 @@
     <svg id="pie-chart" width="960" height="450" onmouseover=responsiveVoice.speak($(this).text()); onmouseleave=responsiveVoice.cancel();></svg><a name="regional"></a>
 	</div>	
     <p><br><br><br></p>
+	<div id="regionlevel">
     <h2 class="subtitle" onmouseover=responsiveVoice.speak($(this).text()); onmouseleave=responsiveVoice.cancel();>Educational Attainment: Region-level Breakdown of University Students</h2>
 	
     <form id="tree-form">
@@ -48,7 +49,9 @@
 	<p></p>
     <div id="chart" onmouseover=responsiveVoice.speak($(this).text()); onmouseleave=responsiveVoice.cancel();></div>
 	<a name="state"></a>
+	</div>	
     <p><br><br></p>
+	<div id="statelevel">
     <h2 class="subtitle" onmouseover=responsiveVoice.speak($(this).text()); onmouseleave=responsiveVoice.cancel();>Education Level of Population in Schooling: State-level Breakdown</h2>
 	
     <form id="stack-form">
@@ -62,6 +65,7 @@
     <div>
         <svg id="stacked-bar-chart" onmouseover=responsiveVoice.speak($(this).text()); onmouseleave=responsiveVoice.cancel();></svg>
     </div>
+	</div>	
 
     
 <script src="https://d3js.org/d3.v4.min.js"></script>
