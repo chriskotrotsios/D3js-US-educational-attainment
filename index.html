@@ -84,19 +84,24 @@
 /* scrollTop() >= 240
    Should be equal the the height of the header
  */
-	
-	function showHide(shID) {
-if (document.getElementById(shID)) {
-  if (document.getElementById(shID+'-show').style.display != 'none') {
-     document.getElementById(shID+'-show').style.display = 'none';
-     document.getElementById(shID).style.display = 'block';
-  }
-  else {
-     document.getElementById(shID+'-show').style.display = 'inline';
-     document.getElementById(shID).style.display = 'none';
-  }
- }
+
+function national() {
+    document.getElementById("regionlevel").style.display = "none";
+    document.getElementById("statelevel").style.display = "none";
+    document.getElementById("nationwide").style.display = "block";
 }
+
+function regional() {
+    document.getElementById("statelevel").style.display = "none";
+    document.getElementById("nationwide").style.display = "none";
+    document.getElementById("regionlevel").style.display = "block";
+}
+	
+function statelevel() {
+    document.getElementById("regionlevel").style.display = "none";
+    document.getElementById("nationwide").style.display = "none";
+    document.getElementById("statelevel").style.display = "block";
+}	
 	
 </script>
 <audio>
