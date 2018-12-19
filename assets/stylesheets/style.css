@@ -339,3 +339,72 @@ form {
 	    font-size:8px !important;
         color: #0FA3B1;
     }
+
+#chart-container {
+	  height: 360px;
+	  position: relative;
+	  width: 360px;
+	}
+
+	.legend { font-size: 12px; }
+
+	rect {
+	  stroke-width: 2;
+	  cursor: pointer;
+	}
+	rect.disabled { fill: transparent !important; }
+
+	.tooltip {
+	  background: #eee;
+	  box-shadow: 0 0 5px #999999;
+	  color: #333;
+	  display: none;
+	  font-size: 12px;
+	  left: 130px;
+	  padding: 10px;
+	  position: absolute;
+	  text-align: center;
+	  top: 95px;
+	  width: 80px;
+	  z-index: 10;
+	}
+	
+.chartdebt {
+  width:700px;
+  height:400px;
+  margin: 0 auto;
+}
+
+#lineChart {
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px #000000;
+}
+
+.x, .y {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x text, .y text {
+  stroke: none;
+  fill: #000;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+}
+
+.pionts {
+  fill: #fff;
+  stroke: green;
+  stroke-width: 2;
+}
+
+.points circle {
+  display: none;
+}
+
+.value {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 12px;
+}
