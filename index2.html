@@ -1,1 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <title>Data Statistics</title>
+  
+  
+	<link rel="stylesheet" href="assets/stylesheets/style.css">
+	<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css'>
+
+  
+</head>
+<header>
+       <nav>
+    <ul>
+      <li><a href="index.html" class="button">Back to homepage</a></li>
+    <ul>
+        </nav>
+    </header>
+
+<html>
+
+<body>
+	<center><h1 class="title"> Data Statistics</h1></center>
+	<p><br><br></p>
+	<p><br><br></p>
+	<center><h2 class="subtitle"> Ελληνικό Δημόσιο Χρέος ως προς το ΑΕΠ (%)(2008-2017) </h2> </center>
+	<p><br><br></p>
+	<div class="chartdebt">
+    <svg id="lineChart" width="700" height="400"></svg>
+	</div>
+    <script src='https://d3js.org/d3.v3.min.js'></script>
+
+  
+
+    <script  src="assets/scripts/script_6.js"></script>
+	<p><br><br></p>
+	<center><h2 class="subtitle"> Αυτοκινιτηστικά Δυστηχήματα σε Λιθουανία-Λετονία-Εσθονία(2010-2016) </h2> </center>
+	<p><br><br></p>
+	<select id="chartType">
+		<option value="bar">bar chart</option>
+		<option value="area">area chart</option>
+		<option value="line">line chart</option>
+		<option value="spline">spline chart</option>
+    </select>
+
+	<div id="chart"></div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.11/c3.min.js'></script>
+	<script src='https://d3js.org/d3.v3.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+	<script  src="assets/scripts/script_5.js"></script>
+	<p><br><br></p>
+	<center><h2 class="subtitle"> Ταξινόμηση Επιβατικών Οχημάτων στην Αθήνα (%) - Απρίλιος 2018</h2></center>
+	<p><br><br></p>
+	<center><div id="chart-container"></div></center>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
+	<script  src="assets/scripts/script_4.js"></script>
+
+	
+
+
+</body>
+
+</html>
